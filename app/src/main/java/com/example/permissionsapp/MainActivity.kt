@@ -194,3 +194,7 @@ fun PermissionsSettingsScreen() {
     // Helper to open device application settings
     fun openAppSettings() {
         val intent = Intent(Settings.ACTION_APPLICATION_DETAILS_SETTINGS).apply {
+            data = Uri.fromParts("package", context.packageName, null)
+        }
+        context.startActivity(intent)
+    }
