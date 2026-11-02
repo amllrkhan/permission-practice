@@ -126,3 +126,7 @@ fun PermissionsSettingsScreen() {
             }
         }
         lifecycleOwner.lifecycle.addObserver(observer)
+        onDispose {
+            lifecycleOwner.lifecycle.removeObserver(observer)
+        }
+    }
