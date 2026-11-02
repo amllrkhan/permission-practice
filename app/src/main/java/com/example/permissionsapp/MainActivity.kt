@@ -142,3 +142,7 @@ fun PermissionsSettingsScreen() {
             }
         } else {
             if (cameraTries > 0) {
+                cameraTries--
+            }
+            scope.launch {
+                snackbarHostState.showSnackbar("Permission denied, you've $cameraTries amount of tries left.")
