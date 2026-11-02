@@ -66,3 +66,7 @@ fun PermissionsSettingsScreen() {
     val maxTries = 2
 
     // State for remaining tries
+    var cameraTries by remember { mutableIntStateOf(maxTries) }
+    var locationTries by remember { mutableIntStateOf(maxTries) }
+    var mediaTries by remember { mutableIntStateOf(maxTries) }
+
