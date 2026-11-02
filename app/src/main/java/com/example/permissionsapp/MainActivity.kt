@@ -254,3 +254,7 @@ fun PermissionsSettingsScreen() {
                     } else {
                         scope.launch {
                             snackbarHostState.showSnackbar("Tries exhausted. Navigating to settings...")
+                        }
+                        openAppSettings()
+                    }
+                }
