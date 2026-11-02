@@ -154,3 +154,7 @@ fun PermissionsSettingsScreen() {
     val locationLauncher = rememberLauncherForActivityResult(
         contract = ActivityResultContracts.RequestMultiplePermissions()
     ) { permissionsMap ->
+        val granted = permissionsMap[Manifest.permission.ACCESS_FINE_LOCATION] == true ||
+                permissionsMap[Manifest.permission.ACCESS_COARSE_LOCATION] == true
+        if (granted) {
+            isLocationGranted = true
