@@ -186,3 +186,7 @@ fun PermissionsSettingsScreen() {
                 mediaTries--
             }
             scope.launch {
+                snackbarHostState.showSnackbar("Permission is denied, you've $mediaTries amount of tries left.")
+            }
+        }
+    }
