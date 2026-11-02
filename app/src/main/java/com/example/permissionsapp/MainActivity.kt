@@ -138,3 +138,7 @@ fun PermissionsSettingsScreen() {
         if (granted) {
             isCameraGranted = true
             scope.launch {
+                snackbarHostState.showSnackbar("Camera permission granted!")
+            }
+        } else {
+            if (cameraTries > 0) {
