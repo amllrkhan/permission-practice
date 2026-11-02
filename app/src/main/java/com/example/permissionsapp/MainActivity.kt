@@ -150,3 +150,7 @@ fun PermissionsSettingsScreen() {
         }
     }
 
+    // 2. Geolocation launcher
+    val locationLauncher = rememberLauncherForActivityResult(
+        contract = ActivityResultContracts.RequestMultiplePermissions()
+    ) { permissionsMap ->
