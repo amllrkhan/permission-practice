@@ -90,3 +90,7 @@ fun PermissionsSettingsScreen() {
         ) == PackageManager.PERMISSION_GRANTED
         val coarseLocation = ContextCompat.checkSelfPermission(
             context,
+            Manifest.permission.ACCESS_COARSE_LOCATION
+        ) == PackageManager.PERMISSION_GRANTED
+        isLocationGranted = fineLocation || coarseLocation
+
