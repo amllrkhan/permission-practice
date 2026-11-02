@@ -162,3 +162,7 @@ fun PermissionsSettingsScreen() {
                 snackbarHostState.showSnackbar("Location permission granted!")
             }
         } else {
+            if (locationTries > 0) {
+                locationTries--
+            }
+            scope.launch {
