@@ -118,3 +118,7 @@ fun PermissionsSettingsScreen() {
         }
     }
 
+    // Refresh permissions whenever app comes to foreground (e.g., returning from Settings)
+    DisposableEffect(lifecycleOwner) {
+        val observer = LifecycleEventObserver { _, event ->
+            if (event == Lifecycle.Event.ON_RESUME) {
