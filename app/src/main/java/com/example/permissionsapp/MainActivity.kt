@@ -170,3 +170,7 @@ fun PermissionsSettingsScreen() {
             }
         }
     }
+
+    // 3. Media launcher (photos and videos, API 34+)
+    val mediaLauncher = rememberLauncherForActivityResult(
+        contract = ActivityResultContracts.RequestMultiplePermissions()
