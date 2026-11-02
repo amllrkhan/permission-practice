@@ -146,3 +146,7 @@ fun PermissionsSettingsScreen() {
             }
             scope.launch {
                 snackbarHostState.showSnackbar("Permission denied, you've $cameraTries amount of tries left.")
+            }
+        }
+    }
+
