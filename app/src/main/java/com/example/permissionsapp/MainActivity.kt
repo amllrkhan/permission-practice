@@ -234,3 +234,7 @@ fun PermissionsSettingsScreen() {
             Text(
                 text = "Tap on an item below to request permission. If denied $maxTries times, tapping again will navigate you to system settings.",
                 fontSize = 14.sp,
+                color = MaterialTheme.colorScheme.onSurfaceVariant
+            )
+
+            // Camera Item
