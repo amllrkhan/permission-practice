@@ -134,3 +134,7 @@ fun PermissionsSettingsScreen() {
     // 1. Camera launcher
     val cameraLauncher = rememberLauncherForActivityResult(
         contract = ActivityResultContracts.RequestPermission()
+    ) { granted ->
+        if (granted) {
+            isCameraGranted = true
+            scope.launch {
