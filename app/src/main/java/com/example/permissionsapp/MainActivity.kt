@@ -58,3 +58,7 @@ class MainActivity : ComponentActivity() {
 @Composable
 fun PermissionsSettingsScreen() {
     val context = LocalContext.current
+    val lifecycleOwner = LocalLifecycleOwner.current
+    val snackbarHostState = remember { SnackbarHostState() }
+    val scope = rememberCoroutineScope()
+
