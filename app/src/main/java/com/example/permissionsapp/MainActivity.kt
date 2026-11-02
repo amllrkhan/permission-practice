@@ -94,3 +94,7 @@ fun PermissionsSettingsScreen() {
         ) == PackageManager.PERMISSION_GRANTED
         isLocationGranted = fineLocation || coarseLocation
 
+        // Media (API 34+ Visual User Selected or standard media images/video)
+        isMediaGranted = if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.UPSIDE_DOWN_CAKE) {
+            val visualSelected = ContextCompat.checkSelfPermission(
+                context,
