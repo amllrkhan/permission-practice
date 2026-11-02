@@ -166,3 +166,7 @@ fun PermissionsSettingsScreen() {
                 locationTries--
             }
             scope.launch {
+                snackbarHostState.showSnackbar("Permission is denied, you've $locationTries amount of tries left.")
+            }
+        }
+    }
