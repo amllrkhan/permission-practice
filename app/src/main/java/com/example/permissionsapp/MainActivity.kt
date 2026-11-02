@@ -258,3 +258,7 @@ fun PermissionsSettingsScreen() {
                         openAppSettings()
                     }
                 }
+            )
+
+            // Geolocation Item
+            PermissionItemCard(
