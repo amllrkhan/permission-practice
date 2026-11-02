@@ -70,3 +70,7 @@ fun PermissionsSettingsScreen() {
     var locationTries by remember { mutableIntStateOf(maxTries) }
     var mediaTries by remember { mutableIntStateOf(maxTries) }
 
+    // State for permission status
+    var isCameraGranted by remember { mutableStateOf(false) }
+    var isLocationGranted by remember { mutableStateOf(false) }
+    var isMediaGranted by remember { mutableStateOf(false) }
