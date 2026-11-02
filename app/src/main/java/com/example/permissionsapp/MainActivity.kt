@@ -130,3 +130,7 @@ fun PermissionsSettingsScreen() {
             lifecycleOwner.lifecycle.removeObserver(observer)
         }
     }
+
+    // 1. Camera launcher
+    val cameraLauncher = rememberLauncherForActivityResult(
+        contract = ActivityResultContracts.RequestPermission()
