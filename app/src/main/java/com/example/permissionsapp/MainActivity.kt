@@ -246,3 +246,7 @@ fun PermissionsSettingsScreen() {
                 triesLeft = cameraTries,
                 onClick = {
                     if (isCameraGranted) {
+                        scope.launch {
+                            snackbarHostState.showSnackbar("Camera permission is already granted.")
+                        }
+                    } else if (cameraTries > 0) {
