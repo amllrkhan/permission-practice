@@ -198,3 +198,7 @@ fun PermissionsSettingsScreen() {
         }
         context.startActivity(intent)
     }
+
+    Scaffold(
+        topBar = {
+            TopAppBar(
