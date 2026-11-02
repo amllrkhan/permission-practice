@@ -178,3 +178,7 @@ fun PermissionsSettingsScreen() {
         val granted = permissionsMap.values.any { it }
         if (granted) {
             isMediaGranted = true
+            scope.launch {
+                snackbarHostState.showSnackbar("Media permission granted!")
+            }
+        } else {
