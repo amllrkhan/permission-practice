@@ -202,3 +202,7 @@ fun PermissionsSettingsScreen() {
     Scaffold(
         topBar = {
             TopAppBar(
+                title = {
+                    Text(
+                        text = "Permissions Settings",
+                        fontWeight = FontWeight.SemiBold
