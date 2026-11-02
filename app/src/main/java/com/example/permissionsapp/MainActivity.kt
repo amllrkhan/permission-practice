@@ -158,3 +158,7 @@ fun PermissionsSettingsScreen() {
                 permissionsMap[Manifest.permission.ACCESS_COARSE_LOCATION] == true
         if (granted) {
             isLocationGranted = true
+            scope.launch {
+                snackbarHostState.showSnackbar("Location permission granted!")
+            }
+        } else {
