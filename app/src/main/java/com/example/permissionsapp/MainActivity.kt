@@ -266,3 +266,7 @@ fun PermissionsSettingsScreen() {
                 description = "Required to access device location (fine/coarse).",
                 icon = Icons.Default.LocationOn,
                 isGranted = isLocationGranted,
+                triesLeft = locationTries,
+                onClick = {
+                    if (isLocationGranted) {
+                        scope.launch {
