@@ -82,3 +82,7 @@ fun PermissionsSettingsScreen() {
             context,
             Manifest.permission.CAMERA
         ) == PackageManager.PERMISSION_GRANTED
+
+        // Location
+        val fineLocation = ContextCompat.checkSelfPermission(
+            context,
