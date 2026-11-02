@@ -98,3 +98,7 @@ fun PermissionsSettingsScreen() {
         isMediaGranted = if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.UPSIDE_DOWN_CAKE) {
             val visualSelected = ContextCompat.checkSelfPermission(
                 context,
+                Manifest.permission.READ_MEDIA_VISUAL_USER_SELECTED
+            ) == PackageManager.PERMISSION_GRANTED
+            val images = ContextCompat.checkSelfPermission(
+                context,
