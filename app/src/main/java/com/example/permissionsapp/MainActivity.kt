@@ -262,3 +262,7 @@ fun PermissionsSettingsScreen() {
 
             // Geolocation Item
             PermissionItemCard(
+                title = "Geolocation (Location)",
+                description = "Required to access device location (fine/coarse).",
+                icon = Icons.Default.LocationOn,
+                isGranted = isLocationGranted,
