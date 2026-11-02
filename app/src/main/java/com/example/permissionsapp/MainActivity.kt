@@ -174,3 +174,7 @@ fun PermissionsSettingsScreen() {
     // 3. Media launcher (photos and videos, API 34+)
     val mediaLauncher = rememberLauncherForActivityResult(
         contract = ActivityResultContracts.RequestMultiplePermissions()
+    ) { permissionsMap ->
+        val granted = permissionsMap.values.any { it }
+        if (granted) {
+            isMediaGranted = true
