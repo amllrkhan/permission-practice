@@ -242,3 +242,7 @@ fun PermissionsSettingsScreen() {
                 title = "Camera",
                 description = "Required to capture photos and scan codes.",
                 icon = Icons.Default.CameraAlt,
+                isGranted = isCameraGranted,
+                triesLeft = cameraTries,
+                onClick = {
+                    if (isCameraGranted) {
