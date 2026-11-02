@@ -62,3 +62,7 @@ fun PermissionsSettingsScreen() {
     val snackbarHostState = remember { SnackbarHostState() }
     val scope = rememberCoroutineScope()
 
+    // Maximum allowed denial tries before redirecting to Settings
+    val maxTries = 2
+
+    // State for remaining tries
