@@ -278,3 +278,7 @@ fun PermissionsSettingsScreen() {
                                 Manifest.permission.ACCESS_FINE_LOCATION,
                                 Manifest.permission.ACCESS_COARSE_LOCATION
                             )
+                        )
+                    } else {
+                        scope.launch {
+                            snackbarHostState.showSnackbar("Tries exhausted. Navigating to settings...")
