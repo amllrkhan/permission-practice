@@ -106,3 +106,7 @@ fun PermissionsSettingsScreen() {
             ) == PackageManager.PERMISSION_GRANTED
             visualSelected || images
         } else if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
+            ContextCompat.checkSelfPermission(
+                context,
+                Manifest.permission.READ_MEDIA_IMAGES
+            ) == PackageManager.PERMISSION_GRANTED
