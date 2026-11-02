@@ -206,3 +206,7 @@ fun PermissionsSettingsScreen() {
                     Text(
                         text = "Permissions Settings",
                         fontWeight = FontWeight.SemiBold
+                    )
+                },
+                colors = TopAppBarDefaults.topAppBarColors(
+                    containerColor = MaterialTheme.colorScheme.primaryContainer,
