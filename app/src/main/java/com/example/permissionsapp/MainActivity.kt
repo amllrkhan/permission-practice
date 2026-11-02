@@ -218,3 +218,7 @@ fun PermissionsSettingsScreen() {
     ) { paddingValues ->
         Column(
             modifier = Modifier
+                .fillMaxSize()
+                .padding(paddingValues)
+                .padding(16.dp)
+                .verticalScroll(rememberScrollState()),
