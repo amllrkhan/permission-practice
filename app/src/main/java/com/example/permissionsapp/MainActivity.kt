@@ -74,3 +74,7 @@ fun PermissionsSettingsScreen() {
     var isCameraGranted by remember { mutableStateOf(false) }
     var isLocationGranted by remember { mutableStateOf(false) }
     var isMediaGranted by remember { mutableStateOf(false) }
+
+    // Helper to refresh permission statuses
+    fun refreshPermissions() {
+        // Camera
