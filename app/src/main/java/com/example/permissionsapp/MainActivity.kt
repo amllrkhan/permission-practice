@@ -214,3 +214,7 @@ fun PermissionsSettingsScreen() {
                 )
             )
         },
+        snackbarHost = { SnackbarHost(snackbarHostState) }
+    ) { paddingValues ->
+        Column(
+            modifier = Modifier
