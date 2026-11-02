@@ -182,3 +182,7 @@ fun PermissionsSettingsScreen() {
                 snackbarHostState.showSnackbar("Media permission granted!")
             }
         } else {
+            if (mediaTries > 0) {
+                mediaTries--
+            }
+            scope.launch {
