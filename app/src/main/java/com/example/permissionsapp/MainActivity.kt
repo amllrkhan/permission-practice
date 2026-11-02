@@ -226,3 +226,7 @@ fun PermissionsSettingsScreen() {
         ) {
             Text(
                 text = "Manage App Permissions",
+                fontSize = 18.sp,
+                fontWeight = FontWeight.Bold,
+                color = MaterialTheme.colorScheme.onSurface
+            )
