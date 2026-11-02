@@ -270,3 +270,7 @@ fun PermissionsSettingsScreen() {
                 onClick = {
                     if (isLocationGranted) {
                         scope.launch {
+                            snackbarHostState.showSnackbar("Location permission is already granted.")
+                        }
+                    } else if (locationTries > 0) {
+                        locationLauncher.launch(
