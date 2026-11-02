@@ -222,3 +222,7 @@ fun PermissionsSettingsScreen() {
                 .padding(paddingValues)
                 .padding(16.dp)
                 .verticalScroll(rememberScrollState()),
+            verticalArrangement = Arrangement.spacedBy(16.dp)
+        ) {
+            Text(
+                text = "Manage App Permissions",
