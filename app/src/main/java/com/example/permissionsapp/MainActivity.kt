@@ -230,3 +230,7 @@ fun PermissionsSettingsScreen() {
                 fontWeight = FontWeight.Bold,
                 color = MaterialTheme.colorScheme.onSurface
             )
+
+            Text(
+                text = "Tap on an item below to request permission. If denied $maxTries times, tapping again will navigate you to system settings.",
+                fontSize = 14.sp,
