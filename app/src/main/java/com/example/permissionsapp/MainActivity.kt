@@ -54,3 +54,7 @@ class MainActivity : ComponentActivity() {
     }
 }
 
+@OptIn(ExperimentalMaterial3Api::class)
+@Composable
+fun PermissionsSettingsScreen() {
+    val context = LocalContext.current
