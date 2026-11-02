@@ -250,3 +250,7 @@ fun PermissionsSettingsScreen() {
                             snackbarHostState.showSnackbar("Camera permission is already granted.")
                         }
                     } else if (cameraTries > 0) {
+                        cameraLauncher.launch(Manifest.permission.CAMERA)
+                    } else {
+                        scope.launch {
+                            snackbarHostState.showSnackbar("Tries exhausted. Navigating to settings...")
