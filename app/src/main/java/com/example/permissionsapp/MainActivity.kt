@@ -78,3 +78,7 @@ fun PermissionsSettingsScreen() {
     // Helper to refresh permission statuses
     fun refreshPermissions() {
         // Camera
+        isCameraGranted = ContextCompat.checkSelfPermission(
+            context,
+            Manifest.permission.CAMERA
+        ) == PackageManager.PERMISSION_GRANTED
