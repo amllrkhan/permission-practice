@@ -148,3 +148,7 @@ DisposableEffect(lifecycleOwner) {
 ## 🛠️ Tech Stack & Requirements
 
 - **Language:** Kotlin
+- **UI Framework:** Jetpack Compose (Material 3)
+- **Compile SDK:** 34 (Android 14)
+- **Target SDK:** 34
+- **Min SDK:** 26
