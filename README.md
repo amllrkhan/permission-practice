@@ -70,3 +70,9 @@ val cameraLauncher = rememberLauncherForActivityResult(
         }
     }
 }
+```
+
+### 2. Handling Tries Exhaustion & Redirecting to Settings
+
+When an item is clicked, we first check if it is already granted. If not, and there are tries remaining (`cameraTries > 0`), we trigger the system dialog. If tries reach 0, we redirect the user directly to the app details in system settings:
+
