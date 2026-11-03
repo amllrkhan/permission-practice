@@ -16,3 +16,9 @@ Drag and drop your recorded screen video (MP4) right here when editing this file
 
 https://github.com/user-attachments/assets/sample-demo-video.mp4
 
+</details>
+
+---
+
+## 📱 Features & Behavior
+
