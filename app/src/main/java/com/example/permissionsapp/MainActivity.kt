@@ -354,3 +354,7 @@ fun PermissionItemCard(
     triesLeft: Int,
     onClick: () -> Unit
 ) {
+    Card(
+        modifier = Modifier
+            .fillMaxWidth()
+            .clickable { onClick() },
