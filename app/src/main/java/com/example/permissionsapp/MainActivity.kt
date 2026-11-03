@@ -402,3 +402,7 @@ fun PermissionItemCard(
                 } else {
                     Text(
                         text = "Status: Not Granted • Tries left: $triesLeft",
+                        fontSize = 13.sp,
+                        fontWeight = FontWeight.Medium,
+                        color = if (triesLeft == 0) MaterialTheme.colorScheme.error else MaterialTheme.colorScheme.onSurfaceVariant
+                    )
