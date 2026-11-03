@@ -58,3 +58,9 @@ val cameraLauncher = rememberLauncherForActivityResult(
         isCameraGranted = true
         scope.launch {
             snackbarHostState.showSnackbar("Camera permission granted!")
+        }
+    } else {
+        if (cameraTries > 0) {
+            cameraTries--
+        }
+        scope.launch {
