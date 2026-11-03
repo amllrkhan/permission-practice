@@ -318,3 +318,7 @@ fun PermissionsSettingsScreen() {
                         mediaLauncher.launch(permissionsToRequest)
                     } else {
                         scope.launch {
+                            snackbarHostState.showSnackbar("Tries exhausted. Navigating to settings...")
+                        }
+                        openAppSettings()
+                    }
