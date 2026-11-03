@@ -406,3 +406,7 @@ fun PermissionItemCard(
                         fontWeight = FontWeight.Medium,
                         color = if (triesLeft == 0) MaterialTheme.colorScheme.error else MaterialTheme.colorScheme.onSurfaceVariant
                     )
+                }
+            }
+
+            Icon(
