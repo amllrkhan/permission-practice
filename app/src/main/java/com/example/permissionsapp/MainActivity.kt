@@ -290,3 +290,7 @@ fun PermissionsSettingsScreen() {
 
             // Media (Photos/Videos) Item - API 34+
             PermissionItemCard(
+                title = "Photos & Videos (Media)",
+                description = "Required to access media on device (API 34+ support).",
+                icon = Icons.Default.PhotoLibrary,
+                isGranted = isMediaGranted,
