@@ -386,3 +386,7 @@ fun PermissionItemCard(
                     fontWeight = FontWeight.Bold,
                     fontSize = 16.sp
                 )
+                Text(
+                    text = description,
+                    fontSize = 12.sp,
+                    color = MaterialTheme.colorScheme.onSurfaceVariant
