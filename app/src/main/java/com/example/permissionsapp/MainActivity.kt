@@ -334,3 +334,7 @@ fun PermissionsSettingsScreen() {
                     locationTries = maxTries
                     mediaTries = maxTries
                     scope.launch {
+                        snackbarHostState.showSnackbar("Tries counter reset to $maxTries.")
+                    }
+                },
+                modifier = Modifier.fillMaxWidth()
