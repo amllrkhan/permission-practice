@@ -314,3 +314,7 @@ fun PermissionsSettingsScreen() {
                             else -> arrayOf(
                                 Manifest.permission.READ_EXTERNAL_STORAGE
                             )
+                        }
+                        mediaLauncher.launch(permissionsToRequest)
+                    } else {
+                        scope.launch {
