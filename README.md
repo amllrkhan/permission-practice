@@ -142,3 +142,9 @@ DisposableEffect(lifecycleOwner) {
     }
 }
 ```
+
+---
+
+## 🛠️ Tech Stack & Requirements
+
+- **Language:** Kotlin
