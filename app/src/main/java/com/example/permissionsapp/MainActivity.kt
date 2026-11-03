@@ -338,3 +338,7 @@ fun PermissionsSettingsScreen() {
                     }
                 },
                 modifier = Modifier.fillMaxWidth()
+            ) {
+                Text("Reset Tries Counter (For Testing)")
+            }
+        }
