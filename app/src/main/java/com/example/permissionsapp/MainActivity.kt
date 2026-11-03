@@ -350,3 +350,7 @@ fun PermissionItemCard(
     title: String,
     description: String,
     icon: ImageVector,
+    isGranted: Boolean,
+    triesLeft: Int,
+    onClick: () -> Unit
+) {
