@@ -398,3 +398,7 @@ fun PermissionItemCard(
                         fontSize = 13.sp,
                         fontWeight = FontWeight.Medium,
                         color = Color(0xFF2E7D32)
+                    )
+                } else {
+                    Text(
+                        text = "Status: Not Granted • Tries left: $triesLeft",
