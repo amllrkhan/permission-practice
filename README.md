@@ -40,3 +40,9 @@ The app consists of a single **Permissions Settings** screen with 3 items:
    - Handles the new Android 14 visual user-selected partial media access permission (`READ_MEDIA_VISUAL_USER_SELECTED`) along with standard media permissions.
 
 ---
+
+## 💻 Code Explanation: How Permissions Are Handled
+
+Here is how the permission flow and retry logic are implemented in `MainActivity.kt`:
+
+### 1. Request Launcher & Retry Counter Logic
