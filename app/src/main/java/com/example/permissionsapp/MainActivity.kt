@@ -414,3 +414,6 @@ fun PermissionItemCard(
                 contentDescription = "Open",
                 tint = MaterialTheme.colorScheme.onSurfaceVariant
             )
+        }
+    }
+}
