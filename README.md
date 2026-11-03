@@ -100,3 +100,9 @@ fun openAppSettings() {
         data = Uri.fromParts("package", context.packageName, null)
     }
     context.startActivity(intent)
+}
+```
+
+### 3. API 34+ Media Permission Support
+
+Android 14 (API 34) introduced selective photo/video sharing. In `AndroidManifest.xml` and in the launcher, we inspect the SDK version dynamically:
