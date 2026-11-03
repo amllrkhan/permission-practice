@@ -106,3 +106,9 @@ fun openAppSettings() {
 ### 3. API 34+ Media Permission Support
 
 Android 14 (API 34) introduced selective photo/video sharing. In `AndroidManifest.xml` and in the launcher, we inspect the SDK version dynamically:
+
+```kotlin
+val permissionsToRequest = when {
+    Build.VERSION.SDK_INT >= Build.VERSION_CODES.UPSIDE_DOWN_CAKE -> arrayOf(
+        Manifest.permission.READ_MEDIA_IMAGES,
+        Manifest.permission.READ_MEDIA_VIDEO,
