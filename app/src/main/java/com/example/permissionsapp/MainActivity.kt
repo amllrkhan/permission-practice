@@ -394,3 +394,7 @@ fun PermissionItemCard(
                 Spacer(modifier = Modifier.height(4.dp))
                 if (isGranted) {
                     Text(
+                        text = "Status: Granted",
+                        fontSize = 13.sp,
+                        fontWeight = FontWeight.Medium,
+                        color = Color(0xFF2E7D32)
