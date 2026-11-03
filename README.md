@@ -4,3 +4,9 @@ This is an Android application built using Jetpack Compose to practice Android r
 
 ---
 
+## 📹 Demo Video
+
+<details>
+<summary>▶️ Click to expand/collapse demo video (Max 40s)</summary>
+
+<!-- 
