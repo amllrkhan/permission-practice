@@ -346,3 +346,7 @@ fun PermissionsSettingsScreen() {
 }
 
 @Composable
+fun PermissionItemCard(
+    title: String,
+    description: String,
+    icon: ImageVector,
