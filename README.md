@@ -64,3 +64,9 @@ val cameraLauncher = rememberLauncherForActivityResult(
             cameraTries--
         }
         scope.launch {
+            snackbarHostState.showSnackbar(
+                "Permission denied, you've $cameraTries amount of tries left."
+            )
+        }
+    }
+}
