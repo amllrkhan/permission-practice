@@ -46,3 +46,9 @@ The app consists of a single **Permissions Settings** screen with 3 items:
 Here is how the permission flow and retry logic are implemented in `MainActivity.kt`:
 
 ### 1. Request Launcher & Retry Counter Logic
+
+We use `rememberLauncherForActivityResult` with AndroidX activity result contracts. When the user denies the request, we decrement the remaining tries counter and notify them with a Snackbar:
+
+```kotlin
+// Launcher for camera permission
+val cameraLauncher = rememberLauncherForActivityResult(
