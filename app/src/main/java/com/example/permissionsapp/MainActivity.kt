@@ -342,3 +342,7 @@ fun PermissionsSettingsScreen() {
                 Text("Reset Tries Counter (For Testing)")
             }
         }
+    }
+}
+
+@Composable
