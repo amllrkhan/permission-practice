@@ -298,3 +298,7 @@ fun PermissionsSettingsScreen() {
                 onClick = {
                     if (isMediaGranted) {
                         scope.launch {
+                            snackbarHostState.showSnackbar("Media permission is already granted.")
+                        }
+                    } else if (mediaTries > 0) {
+                        val permissionsToRequest = when {
