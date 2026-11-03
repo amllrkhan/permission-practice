@@ -52,3 +52,9 @@ We use `rememberLauncherForActivityResult` with AndroidX activity result contrac
 ```kotlin
 // Launcher for camera permission
 val cameraLauncher = rememberLauncherForActivityResult(
+    contract = ActivityResultContracts.RequestPermission()
+) { granted ->
+    if (granted) {
+        isCameraGranted = true
+        scope.launch {
+            snackbarHostState.showSnackbar("Camera permission granted!")
