@@ -94,3 +94,9 @@ if (isCameraGranted) {
 
 The helper function to open system settings:
 
+```kotlin
+fun openAppSettings() {
+    val intent = Intent(Settings.ACTION_APPLICATION_DETAILS_SETTINGS).apply {
+        data = Uri.fromParts("package", context.packageName, null)
+    }
+    context.startActivity(intent)
