@@ -382,3 +382,7 @@ fun PermissionItemCard(
                 modifier = Modifier.weight(1f)
             ) {
                 Text(
+                    text = title,
+                    fontWeight = FontWeight.Bold,
+                    fontSize = 16.sp
+                )
