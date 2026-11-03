@@ -322,3 +322,7 @@ fun PermissionsSettingsScreen() {
                         }
                         openAppSettings()
                     }
+                }
+            )
+
+            Spacer(modifier = Modifier.weight(1f, fill = false))
