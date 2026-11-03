@@ -88,3 +88,9 @@ if (isCameraGranted) {
     scope.launch {
         snackbarHostState.showSnackbar("Tries exhausted. Navigating to settings...")
     }
+    openAppSettings()
+}
+```
+
+The helper function to open system settings:
+
