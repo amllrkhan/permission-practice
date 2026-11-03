@@ -390,3 +390,7 @@ fun PermissionItemCard(
                     text = description,
                     fontSize = 12.sp,
                     color = MaterialTheme.colorScheme.onSurfaceVariant
+                )
+                Spacer(modifier = Modifier.height(4.dp))
+                if (isGranted) {
+                    Text(
