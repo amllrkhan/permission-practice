@@ -130,3 +130,9 @@ mediaLauncher.launch(permissionsToRequest)
 When the user leaves the app to grant permissions in device settings and returns, the `LifecycleEventObserver` catches the `ON_RESUME` event and automatically re-evaluates `checkSelfPermission()` so the UI status immediately switches to "Granted":
 
 ```kotlin
+DisposableEffect(lifecycleOwner) {
+    val observer = LifecycleEventObserver { _, event ->
+        if (event == Lifecycle.Event.ON_RESUME) {
+            refreshPermissions()
+        }
+    }
