@@ -294,3 +294,7 @@ fun PermissionsSettingsScreen() {
                 description = "Required to access media on device (API 34+ support).",
                 icon = Icons.Default.PhotoLibrary,
                 isGranted = isMediaGranted,
+                triesLeft = mediaTries,
+                onClick = {
+                    if (isMediaGranted) {
+                        scope.launch {
