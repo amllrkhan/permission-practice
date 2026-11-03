@@ -22,3 +22,9 @@ https://github.com/user-attachments/assets/sample-demo-video.mp4
 
 ## 📱 Features & Behavior
 
+The app consists of a single **Permissions Settings** screen with 3 items:
+
+1. **Camera** (`CAMERA`):
+   - Clicking prompts the system permission dialog.
+   - If denied, a Snackbar shows: *"Permission denied, you've n amount of tries left."* (2 tries total).
+   - Once all 2 tries are exhausted, tapping the item again automatically redirects the user to the app's system settings page.
