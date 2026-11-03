@@ -374,3 +374,7 @@ fun PermissionItemCard(
                 contentDescription = title,
                 tint = if (isGranted) Color(0xFF2E7D32) else MaterialTheme.colorScheme.primary,
                 modifier = Modifier.size(36.dp)
+            )
+
+            Spacer(modifier = Modifier.width(16.dp))
+
