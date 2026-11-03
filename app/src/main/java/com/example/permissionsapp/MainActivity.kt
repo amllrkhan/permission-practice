@@ -326,3 +326,7 @@ fun PermissionsSettingsScreen() {
             )
 
             Spacer(modifier = Modifier.weight(1f, fill = false))
+
+            // Reset button for testing convenience
+            OutlinedButton(
+                onClick = {
