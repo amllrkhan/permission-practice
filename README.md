@@ -82,3 +82,9 @@ if (isCameraGranted) {
         snackbarHostState.showSnackbar("Camera permission is already granted.")
     }
 } else if (cameraTries > 0) {
+    cameraLauncher.launch(Manifest.permission.CAMERA)
+} else {
+    // 0 tries left: redirect to settings
+    scope.launch {
+        snackbarHostState.showSnackbar("Tries exhausted. Navigating to settings...")
+    }
