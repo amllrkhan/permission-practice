@@ -34,3 +34,9 @@ The app consists of a single **Permissions Settings** screen with 3 items:
    - Requests location permissions using `RequestMultiplePermissions()`.
    - Manifest also declares `ACCESS_BACKGROUND_LOCATION`.
    - Follows the same 2-attempt denial countdown before navigating to system settings.
+
+3. **Photos & Videos / Media** (`READ_MEDIA_IMAGES`, `READ_MEDIA_VIDEO`, `READ_MEDIA_VISUAL_USER_SELECTED`):
+   - Targets **Android 14+ (API 34+)**.
+   - Handles the new Android 14 visual user-selected partial media access permission (`READ_MEDIA_VISUAL_USER_SELECTED`) along with standard media permissions.
+
+---
