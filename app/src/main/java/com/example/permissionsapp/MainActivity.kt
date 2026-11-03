@@ -330,3 +330,7 @@ fun PermissionsSettingsScreen() {
             // Reset button for testing convenience
             OutlinedButton(
                 onClick = {
+                    cameraTries = maxTries
+                    locationTries = maxTries
+                    mediaTries = maxTries
+                    scope.launch {
