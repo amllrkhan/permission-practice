@@ -286,3 +286,7 @@ fun PermissionsSettingsScreen() {
                         openAppSettings()
                     }
                 }
+            )
+
+            // Media (Photos/Videos) Item - API 34+
+            PermissionItemCard(
