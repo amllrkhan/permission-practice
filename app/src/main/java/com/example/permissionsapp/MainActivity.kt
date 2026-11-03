@@ -410,3 +410,7 @@ fun PermissionItemCard(
             }
 
             Icon(
+                imageVector = Icons.Default.ChevronRight,
+                contentDescription = "Open",
+                tint = MaterialTheme.colorScheme.onSurfaceVariant
+            )
