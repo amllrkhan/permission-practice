@@ -124,3 +124,9 @@ val permissionsToRequest = when {
 }
 mediaLauncher.launch(permissionsToRequest)
 ```
+
+### 4. Detecting Permission Changes on App Resume
+
+When the user leaves the app to grant permissions in device settings and returns, the `LifecycleEventObserver` catches the `ON_RESUME` event and automatically re-evaluates `checkSelfPermission()` so the UI status immediately switches to "Granted":
+
+```kotlin
